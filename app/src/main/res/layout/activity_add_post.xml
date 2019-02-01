@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.blogapp.AddPostActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/addPost_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:subtitleTextColor="@android:color/background_light"
+        app:titleTextColor="@android:color/background_light"></android.support.v7.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/imageView_post_cover"
+        android:layout_width="match_parent"
+        android:layout_height="175dp"
+        android:layout_alignStart="@+id/editText_post_title"
+        android:layout_below="@+id/addPost_toolbar"
+        app:srcCompat="@mipmap/ic_add_image" />
+
+    <EditText
+        android:id="@+id/editText_post_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/imageView_post_cover"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="29dp"
+        android:backgroundTint="@color/colorTransparentWhite"
+        android:ems="10"
+        android:hint="Add Title"
+        android:inputType="textMultiLine"
+        android:padding="16dp"
+        android:textColor="@color/colorTransparentWhite"
+        android:textColorHint="@color/colorTransparentWhite"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_add_post"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/editText_post_title"
+        android:layout_below="@+id/editText_post_title"
+        android:layout_marginTop="30dp"
+        android:background="@color/colorAccent"
+        android:text="Add New Post"
+        android:textColor="@android:color/background_light"
+        android:textSize="18sp" />
+
+</RelativeLayout>
